@@ -47,7 +47,9 @@ app.get('/v0/circulating-supply', async (req, res) => {
         circulatingSupply = MAX_SUPPLY - totalNonDistributedTokens;
         console.info(`Done. Current circulating HST supply is ${circulatingSupply}`);
     }
-    res.status(200).send(`${circulatingSupply}`);
+    res.status(200)
+        .setHeader('X-GitHub-Repo', 'https://github.com/buidler-labs/headstarter-coingecko-api')
+        .send(`${circulatingSupply}`);
 });
 
 app.listen(SERVER_PORT, () => {
