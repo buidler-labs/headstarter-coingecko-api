@@ -1,0 +1,11 @@
+{
+  "name": "headstarter-coingecko-api",
+  "version": "1.0.0",
+  "description": "HeadStarter's Coingecko API listing feeder",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "author": "Buidler Labs Developers <devs@buidlerlabs.com>",
+  "dependencies": {}
+}
